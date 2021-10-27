@@ -1,0 +1,114 @@
+body {
+	font-family: "SF Pro Text", "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 55px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.header__logo {
+	width: 275px;
+	height: auto;
+}
+
+.header__heading {
+	font-size: 45px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.header__subheading {
+	font-size: 20px;
+	font-weight: 200;
+	color: #A6A6A6;
+	margin-top: 0;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.input__label {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.input__textarea {
+	font-family: "SF Mono", "Roboto Mono", monospace;
+	font-size: 20px;
+	border-color: #A6A6A6;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.input__error-message {
+	font-size: 14px;
+	color: #D3232E;
+	margin: 5px 0;
+	display: none;
+}
+
+.input__error-message.visible {
+	display: block;
+}
+
+.buttons {
+	width: 600px;
+	display: flex;
+	justify-content: flex-start;
+	margin: 15px 0;
+}
+
+.buttons__button {
+	font-weight: 400;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	background-color: goldenrod;
+	border: none;
+	border-radius: 5px;
+}
+
+.buttons__button--encode {
+	background-color: #5856D8;
+	margin-right: 30px;
+}
+
+.buttons__button--decode {
+	background-color: #007AFF;
+}
+
+.output {
+	width: 637px;
+	margin-top: 50px;
+}
+
+.output__label {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 5px 0;
+}
+
+.output__container {
+	min-height: 100px;
+	border: 1px solid #A6A6A6;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.output__container p {
+	font-family: "SF Mono", "Roboto Mono", monospace;
+	font-size: 20px;
+	margin: 0;
+	overflow-wrap: break-word;
+}

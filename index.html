@@ -1,0 +1,33 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Internetowy Konwerter Morse'a</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<script src="./scripts/app.js" defer></script>
+</head>
+<body>
+	<header class="header">
+		<img src="img/IKM_logo.jpg" class="header__logo" alt="Logo Internetowego Konwertera Morse'a - litery IKM na bazie logo IBM">
+		<h1 class="header__heading">Internetowy Konwerter Morse'a</h1>
+		<p class="header__subheading">Szyfruj i deszyfruj wiadomości za pomocą alfabetu Morse'a</p>
+	</header>
+	<div class="input">
+		<label for="input-field" class="input__label">Wiadomość:</label>
+		<textarea name="input-field" id="input-field" class="input__textarea" cols="50" rows="6"></textarea>
+		<p id="error-message" class="input__error-message"></p>
+	</div>
+	<div class="buttons">
+		<button id="button-encode" class="buttons__button buttons__button--encode">Zaszyfruj</button>
+		<button id="button-decode" class="buttons__button buttons__button--decode">Odszyfruj</button>
+	</div>
+	<div class="output">
+		<p class="output__label">Rezultat:</p>
+		<div class="output__container">
+			<p id="output-field"></p>
+		</div>
+	</div>
+</body>
+</html>
